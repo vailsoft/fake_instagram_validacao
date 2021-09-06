@@ -14,11 +14,11 @@ let likesCount = document.querySelector(".likesCount");
 function addLike(params) {
     let textLike = params.nextElementSibling.innerHTML;    
     let qtd_like = textLike.split(" ")[0];
-    if(params.getAttribute("src") == "img/icons/heart.svg"){
-        params.setAttribute("src", "img/red-heart.png");
+    if(params.getAttribute("src") == "./img/icons/heart.svg"){
+        params.setAttribute("src", "./img/red-heart.png");
         qtd_like++;
     } else {
-        params.setAttribute("src", "img/icons/heart.svg");
+        params.setAttribute("src", "./img/icons/heart.svg");
         qtd_like--;
     }
     params.nextElementSibling.innerHTML = `${qtd_like} likes`;
